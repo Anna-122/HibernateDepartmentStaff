@@ -1,0 +1,16 @@
+<?xml version = "1.0" encoding = "utf-8"?> <!DOCTYPE hibernate-configuration
+        SYSTEM "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/department_staff_hibernate</property>
+        <property name="hibernate.connection.password">root</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="show_sql">true</property>
+        <property name="current_session_context_class">thread</property>
+        <mapping class="edu.goncharova.entities.Department"/>
+        <mapping class="edu.goncharova.entities.Employee"/>
+    </session-factory>
+</hibernate-configuration>
